@@ -4,11 +4,13 @@
   <url>
     <loc>http://example.org/</loc>
   </url><url>
-    <loc>http://example.org/content/posts/c13n.html</loc>
-  </url><url>
     <loc>http://example.org/categories.html</loc>
   </url><url>
     <loc>http://example.org/content.html</loc>
+  </url><url>
+    <loc>http://example.org/content/posts/c13n.html</loc>
+  </url><url>
+    <loc>http://example.org/content/posts/vision.html</loc>
   </url><url>
     <loc>http://example.org/tags.html</loc>
   </url>

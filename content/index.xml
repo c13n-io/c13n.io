@@ -7,12 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="http://example.org/content/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>c13n</title>
+      <title>Intro</title>
       <link>http://example.org/content/posts/c13n.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://example.org/content/posts/c13n.html</guid>
-      <description>Lightning power, at its maximum </description>
+      <description>What is c13n Sitting on top of Bitcoin &amp;amp; LightningNetwork layer, c13n is a component that makes your interaction with LN much easier. It acts as an intermediate layer between your application and your LN Node, without introducing any centralization characteristics.
+c13n utilizes the node&amp;rsquo;s interface to achieve a higher-level API, easy for devs to get used to and to start building on top of right away.
+One of the main priorities of c13n is to be based as much as possible on Lightning Network communication (through micro-payments), and to utilize clearnet the least possible.</description>
+    </item>
+    
+    <item>
+      <title>Our Goal and Vision</title>
+      <link>http://example.org/content/posts/vision.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/content/posts/vision.html</guid>
+      <description>Our goal is to create a common baseline for Lightning Applications. We want applications to have compatibility on the network layer as well as the application layer (for more info check c13n-payload-protocol).
+Making different chatting applications able to normally communicate with each other is a great milestone for this ecosystem.
+We envision an augmented ecosystem of services &amp;amp; apps over the Lightning Network, with easy integration and no compatibility friction.</description>
     </item>
     
   </channel>
