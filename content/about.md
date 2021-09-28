@@ -1,5 +1,5 @@
 ---
-title: "Topics"
+title: "About"
 draft: false
 type: "page"
 weight: 1

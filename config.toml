@@ -6,17 +6,17 @@ theme = "gokarna"
 [menu]
     [[menu.main]]
         identifier = "home"
-        url = "https://c13n.io"
+        url = "/"
         name = "Home"
         weight = 1
     [[menu.main]]
-        identifier = "posts"
-        url = "https://c13n.io/topics/"
-        name = "Topics"
+        identifier = "about"
+        url = "/about/"
+        name = "About"
         weight = 2
     [[menu.main]]
         identifier = "contact"
-        url = "https://c13n.io/contact/"
+        url = "/contact/"
         name = "Contact"
         weight = 4
 [params]
