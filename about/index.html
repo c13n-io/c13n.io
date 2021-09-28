@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>About</title>
+    <meta name="description" content="Gain Lightning powers, today">
+    <meta name="keywords" content=''>
+
+    <meta property="og:url" content="https://c13n.io/about/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="About">
+    <meta property="og:description" content="Gain Lightning powers, today">
+    <meta property="og:image" content="c13n-avatar.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About">
+    <meta name="twitter:description" content="Gain Lightning powers, today">
+    <meta property="twitter:domain" content="https://c13n.io/about/">
+    <meta property="twitter:url" content="https://c13n.io/about/">
+    <meta name="twitter:image" content="c13n-avatar.png">
+
+    
+    <link rel="canonical" href="https://c13n.io/about/" />
+
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="/css/dark.css">
+
+    <script src="/js/svg-injector.min.js"></script>
+    <script src="/js/feather-icons.min.js"></script>
+    <script src="/js/main.js"></script>
+
+    
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="https://c13n.io">
+                <img src="c13n-avatar.png" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://c13n.io">c13n</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="/"> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="/about/"> About </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="/contact/"> Contact </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="/"> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="/about/"> About </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="/contact/"> Contact </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    
+
+    <div class="post container">
+
+    <div class="post-header-section">
+        <h1>About</h1>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <h2 id="what-is-c13n">What is c13n</h2>
+<p>Sitting on top of Bitcoin &amp; LightningNetwork layer, c13n is a component that makes your interaction with LN much easier. It acts as an intermediate layer between your application and your LN Node, without introducing any centralization characteristics.</p>
+<p>c13n utilizes the node&rsquo;s interface to achieve a higher-level API, easy for devs to get used to and to start building on top of right away.</p>
+<p>One of the main priorities of c13n is to be based as much as possible on Lightning Network communication (through micro-payments), and to utilize clearnet the least possible.</p>
+<h2 id="how-does-it-work">How does it work</h2>
+<p>You can send payments and messages natively through c13n.</p>
+<p>For the case of sending a simple message, the flow goes as follows:</p>
+<ul>
+<li>
+<p>Your application will ask c13n to send a message to a specific discussion (involving one or more users).</p>
+</li>
+<li>
+<p>c13n will calculate which network route is optimal for the delivery of this payload.</p>
+</li>
+<li>
+<p>A composite message will be created, including routing info and a small fee for the the intermediate nodes routing your message.</p>
+</li>
+<li>
+<p>The intermediate nodes will receive this composite payload, acquire their micro fee, then deliver the message to the final node. During this routing process, intermediate nodes cannot read the content or any metadata related to the message sent to the final destination.</p>
+</li>
+<li>
+<p>The final destination retrieves the message.</p>
+</li>
+</ul>
+<h2 id="how-is-c13n-deployed">How is c13n deployed</h2>
+<p>c13n is technically a service, it exposes an API at a specific host and port, through which the communication with your application takes place. For ease of use it is recommended to run dockerized, as it will be much easier controlling and/or updating it.</p>
+<h3 id="requirements-of-c13n">Requirements of c13n</h3>
+<p>The one and only requirement of c13n is a functional &amp; reachable Lightning Network node (along with creds of course). Not all LN node implementations are supported, as of now, we have support for LND and partial support for C-Lightning.</p>
+<h2 id="how-to-use-c13n">How to use c13n</h2>
+<p>After successfully deploying c13n on top of your node, you are ready to start building your application logic. For more information on how to use the c13n API check the <a href="">API Docs</a>.</p>
+<p>There are no limitations on what you can build on top of c13n. You can build an end-user application that runs on a mobile device, or even a constantly running server that consumes the c13n API and exposes a new one.</p>
+<h2 id="our-goal-is-to-create-a-common-baseline-for-lightning-applications">Our goal is to create a common baseline for Lightning Applications.</h2>
+<p>We want applications to have compatibility on the network layer as well as the application layer (for more info check <a href="">c13n-payload-protocol</a>).</p>
+<p>Making different chatting applications able to normally communicate with each other is a great milestone for this ecosystem.</p>
+<p>We envision an augmented ecosystem of services &amp; apps over the Lightning Network, with easy integration and no compatibility friction.</p>
+
+        </p>
+    </div>
+</div>
+
+
+
+        </main><footer class="footer">
+    <span>&copy; 2021 c13n.io</span>
+    <span>
+        Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/526avijitgupta/gokarna">Gokarna</a>
+    </span>
+</footer>
+</body>
+</html>
