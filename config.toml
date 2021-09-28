@@ -25,7 +25,6 @@ theme = "gokarna"
     description = "Gain Lightning powers, today"
     footer = "c13n.io"
     socialIcons = [
-      {name = "twitter", url = "https://twitter.com/c13n"},
-      {name = "linkedin", url = "https://linkedin.com"},
+      {name = "twitter", url = "https://twitter.com/c13n_io"},
       {name = "github", url = "https://github.com/c13n-io"},
     ]
