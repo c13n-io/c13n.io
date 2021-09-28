@@ -3,23 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>c13n.io/topics/</loc>
+    <loc>https://c13n.io/topics/</loc>
   </url>
   
   <url>
-    <loc>c13n.io/contact/</loc>
+    <loc>https://c13n.io/contact/</loc>
   </url>
   
   <url>
-    <loc>c13n.io/</loc>
+    <loc>https://c13n.io/</loc>
   </url>
   
   <url>
-    <loc>c13n.io/categories/</loc>
+    <loc>https://c13n.io/categories/</loc>
   </url>
   
   <url>
-    <loc>c13n.io/tags/</loc>
+    <loc>https://c13n.io/tags/</loc>
   </url>
   
 </urlset>
