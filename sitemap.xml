@@ -2,16 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://c13n-io.github.io/c13n.io/</loc>
+    <loc>c13n.io/topics/</loc>
   </url><url>
-    <loc>https://c13n-io.github.io/c13n.io/categories.html</loc>
+    <loc>c13n.io/contact/</loc>
   </url><url>
-    <loc>https://c13n-io.github.io/c13n.io/content.html</loc>
+    <loc>c13n.io/</loc>
   </url><url>
-    <loc>https://c13n-io.github.io/c13n.io/content/posts/c13n.html</loc>
+    <loc>c13n.io/categories/</loc>
   </url><url>
-    <loc>https://c13n-io.github.io/c13n.io/content/posts/vision.html</loc>
-  </url><url>
-    <loc>https://c13n-io.github.io/c13n.io/tags.html</loc>
+    <loc>c13n.io/tags/</loc>
   </url>
 </urlset>
