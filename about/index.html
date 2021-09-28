@@ -132,9 +132,18 @@
     <div class="post-content">
         <p>
             <h2 id="what-is-c13n">What is c13n</h2>
-<p>Sitting on top of Bitcoin &amp; LightningNetwork layer, c13n is a component that makes your interaction with LN much easier. It acts as an intermediate layer between your application and your LN Node, without introducing any centralization characteristics.</p>
+<h5 id="pronounced-c-thirteen">Pronounced &ldquo;c-thirteen&rdquo;</h5>
+<p>Sitting on top of Bitcoin &amp; Lightning Network layer, c13n is a component that makes your interaction with LN much easier. It acts as an intermediate layer between your application and your LN Node, without introducing any centralization characteristics.</p>
 <p>c13n utilizes the node&rsquo;s interface to achieve a higher-level API, easy for devs to get used to and to start building on top of right away.</p>
 <p>One of the main priorities of c13n is to be based as much as possible on Lightning Network communication (through micro-payments), and to utilize clearnet the least possible.</p>
+<h2 id="how-is-c13n-deployed">How is c13n deployed</h2>
+<p>c13n is technically a service that exposes an API at a specific host and port. By using that API, you can directly develop the application logic for your Lightning App.</p>
+<p>For ease of use it is recommended to run c13n dockerized, as it will be much easier deploying and updating it.</p>
+<h4 id="requirements-of-c13n">Requirements of c13n</h4>
+<p>The one and only requirement of c13n is a functional &amp; reachable Lightning Network node (along with creds of course). Not all LN node implementations are supported, as of now, we have support for LND and partial support for C-Lightning.</p>
+<h2 id="how-to-use-c13n">How to use c13n</h2>
+<p>After successfully deploying c13n on top of your node, you are ready to start developing the application logic that consumes the c13n API. For more information check the <a href="">API Docs</a>.</p>
+<p>There are no limitations on what you can build on top of c13n. You can build an end-user application that runs on a mobile device, or even a constantly running server that consumes the c13n API to expose a new one.</p>
 <h2 id="how-does-it-work">How does it work</h2>
 <p>You can send payments and messages natively through c13n.</p>
 <p>For the case of sending a simple message, the flow goes as follows:</p>
@@ -143,7 +152,7 @@
 <p>Your application will ask c13n to send a message to a specific discussion (involving one or more users).</p>
 </li>
 <li>
-<p>c13n will calculate which network route is optimal for the delivery of this payload.</p>
+<p>c13n will calculate which LN route is optimal for the delivery of this payload.</p>
 </li>
 <li>
 <p>A composite message will be created, including routing info and a small fee for the the intermediate nodes routing your message.</p>
@@ -155,13 +164,6 @@
 <p>The final destination retrieves the message.</p>
 </li>
 </ul>
-<h2 id="how-is-c13n-deployed">How is c13n deployed</h2>
-<p>c13n is technically a service, it exposes an API at a specific host and port, through which the communication with your application takes place. For ease of use it is recommended to run dockerized, as it will be much easier controlling and/or updating it.</p>
-<h3 id="requirements-of-c13n">Requirements of c13n</h3>
-<p>The one and only requirement of c13n is a functional &amp; reachable Lightning Network node (along with creds of course). Not all LN node implementations are supported, as of now, we have support for LND and partial support for C-Lightning.</p>
-<h2 id="how-to-use-c13n">How to use c13n</h2>
-<p>After successfully deploying c13n on top of your node, you are ready to start building your application logic. For more information on how to use the c13n API check the <a href="">API Docs</a>.</p>
-<p>There are no limitations on what you can build on top of c13n. You can build an end-user application that runs on a mobile device, or even a constantly running server that consumes the c13n API and exposes a new one.</p>
 <h2 id="our-goal-is-to-create-a-common-baseline-for-lightning-applications">Our goal is to create a common baseline for Lightning Applications.</h2>
 <p>We want applications to have compatibility on the network layer as well as the application layer (for more info check <a href="">c13n-payload-protocol</a>).</p>
 <p>Making different chatting applications able to normally communicate with each other is a great milestone for this ecosystem.</p>
