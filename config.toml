@@ -1,0 +1,39 @@
+baseURL = "c13n.io"
+languageCode = "en-us"
+title = "c13n"
+
+themesDir = "themes"
+theme = "gokarna"
+
+[menu]
+    [[menu.main]]
+        identifier = "home"
+        url = "/"
+        pre = ""
+        post = ""
+        name = "Home"
+        weight = 1
+    [[menu.main]]
+        identifier = "posts"
+        url = "/topics"
+        pre = ""
+        post = ""
+        name = "Topics"
+        weight = 2
+    [[menu.main]]
+        identifier = "contact"
+        url = "/contact/"
+        pre = ""
+        post = ""
+        name = "Contact"
+        weight = 4
+[params]
+    avatarURL = "c13n-avatar.png"
+    avatarSize = "size-xl"
+    description = "Gain Lightning powers, today"
+    footer = "c13n.io"
+    socialIcons = [
+      {name = "twitter", url = "https://twitter.com/c13n"},
+      {name = "linkedin", url = "https://linkedin.com"},
+      {name = "github", url = "https://github.com/c13n-io"},
+    ]
