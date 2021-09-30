@@ -20,7 +20,7 @@ theme = "gokarna"
         name = "Contact"
         weight = 4
 [params]
-    avatarURL = "c13n-avatar.png"
+    avatarURL = "/c13n-avatar.png"
     avatarSize = "size-xl"
     description = "Gain Lightning powers, today"
     footer = "c13n.io"
