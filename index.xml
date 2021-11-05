@@ -2,27 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>c13n</title>
-    <link>https://c13n.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on c13n</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://c13n.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>https://c13n.io/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://c13n.io/about/</guid>
-      <description>What is c13n Pronounced &amp;ldquo;c-thirteen&amp;rdquo; Sitting on top of Bitcoin &amp;amp; Lightning Network layer, c13n is a component that makes your interaction with LN much easier. It acts as an intermediate layer between your application and your LN Node, without introducing any centralization characteristics.
+      <guid>http://localhost:1313/about/</guid>
+      <description>c13n - Creating a common baseline for Lightning Applications ⚡
+ What is c13n  Pronounced &amp;ldquo;c-thirteen&amp;rdquo;
+ Sitting on top of Bitcoin &amp;amp; Lightning Network layer, c13n is a component that makes your interaction with LN much easier. It acts as an intermediate layer between your application and your LN Node, without introducing any centralization characteristics.
 c13n utilizes the node&amp;rsquo;s interface to achieve a higher-level API, easy for devs to get used to and to start building on top of right away.</description>
     </item>
     
     <item>
-      <title>Contact</title>
-      <link>https://c13n.io/contact/</link>
+      <title>Contact us</title>
+      <link>http://localhost:1313/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://c13n.io/contact/</guid>
-      <description>You can send a mail to contact@c13n.io</description>
+      <guid>http://localhost:1313/contact/</guid>
+      <description>If you want to get c13n updates or discuss about the project, you can reach us at:
+Twitter   GitHub   Slack   contact@c13n.io   </description>
     </item>
     
   </channel>
