@@ -1,4 +1,4 @@
-baseURL = "https://c13n.io"
+baseURL = "http://localhost:1313"
 languageCode = "en-us"
 title = "c13n"
 theme = "gokarna"
@@ -23,8 +23,15 @@ theme = "gokarna"
     avatarURL = "https://c13n.io/c13n-avatar.png"
     avatarSize = "size-xl"
     description = "Gain Lightning powers, today"
-    footer = "c13n.io"
+    footer = "c13n"
     socialIcons = [
       {name = "twitter", url = "https://twitter.com/c13n_io"},
       {name = "github", url = "https://github.com/c13n-io"},
+      {name = "slack", url = "https://github.com/c13n-io"},
+    ]
+    contactpoints = [
+      {name = "twitter", title = "Twitter", url = "https://twitter.com/c13n_io"},
+      {name = "github", title = "GitHub", url = "https://github.com/c13n-io"},
+      {name = "slack", title = "Slack", url = "https://github.com/c13n-io"},
+      {name = "mail", title = "contact@c13n.io", url = "mailto:contact@c13n.io"},
     ]

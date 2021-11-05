@@ -1,7 +1,10 @@
 ---
-title: "Contact"
+title: "Contact us"
 draft: false
 weight: 2
 ---
 
-You can send a mail to [contact@c13n.io](mailto:contact@c13n.io)
+
+If you want to get c13n updates or discuss about the project, you can reach us at: 
+
+{{< contact_points >}}
