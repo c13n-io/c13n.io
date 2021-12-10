@@ -9,16 +9,29 @@ theme = "gokarna"
         url = "/"
         name = "Home"
         weight = 1
+        [menu.main.params]
+            target= "_self"
+    [[menu.main]]
+        identifier = "documentation"
+        url = "https://docs.c13n.io"
+        name = "Documentation"
+        weight = 2
+        [menu.main.params]
+            target= "_blank"
     [[menu.main]]
         identifier = "about"
         url = "/about/"
         name = "About"
-        weight = 2
+        weight = 3
+        [menu.main.params]
+            target= "_self"
     [[menu.main]]
         identifier = "contact"
         url = "/contact/"
         name = "Contact"
         weight = 4
+        [menu.main.params]
+            target= "_self"
 [params]
     avatarURL = "https://c13n.io/c13n-avatar.png"
     avatarSize = "size-xl"
