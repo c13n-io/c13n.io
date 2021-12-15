@@ -36,7 +36,7 @@ theme = "gokarna"
     avatarURL = "https://c13n.io/c13n-avatar.png"
     avatarSize = "size-xl"
     description = "Gain Lightning powers, today"
-    footer = "c13n"
+    footer = "Programize LLC"
     socialIcons = [
       #{name = "twitter", url = "https://twitter.com/c13n_io"},
       {name = "github", url = "https://github.com/c13n-io"},
