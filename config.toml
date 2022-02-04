@@ -35,7 +35,8 @@ theme = "gokarna"
 [params]
     avatarURL = "https://c13n.io/c13n-avatar.png"
     avatarSize = "size-xl"
-    description = "Gain Lightning powers, today"
+    description = "Encapsulate and manage data within Lightning payments"
+    description2 = "We are now public & open source. Check our code!"
     footer = "c13n"
     socialIcons = [
       #{name = "twitter", url = "https://twitter.com/c13n_io"},
