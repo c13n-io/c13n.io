@@ -6,17 +6,17 @@ weight: 1
 image: "c13n-avatar.png"
 ---
 
-> **c13n** - Creating a common baseline for Lightning Applications ⚡
+> **c13n** - Creating a common baseline for Lightning Applications
 
 ## What is c13n
 
 > Pronounced "c-thirteen"
 
-Sitting on top of Bitcoin & Lightning Network layer, c13n is a component that makes your interaction with LN much easier. It acts as an intermediate layer between your application and your LN Node, without introducing any centralization characteristics.
+Sitting on top of Lightning Network layer, c13n is a component that introduces new ways to use lightning. It acts as an intermediate layer over your LN node, enabling ⚡data transfer over lightning⚡ for applications!
 
-c13n utilizes the node's interface to achieve a higher-level API, easy for devs to get used to and to start building on top of right away.
+c13n utilizes the node's interface to achieve a higher-level API, including both payment and data focused features, easy for devs to get used to and to start building on top of right away.
 
-One of the main priorities of c13n is to be based as much as possible on Lightning Network communication (through micro-payments), and to utilize clearnet the least possible.
+One of the main priorities of c13n is to be based exclusively on lightning micro-payments and to not utilize clearnet.
 
 ![](/arch_overview.png)
 
@@ -27,28 +27,33 @@ One of the main priorities of c13n is to be based as much as possible on Lightni
 
 c13n is a communication oriented abstraction layer over the RPC API provided by [lnd](https://github.com/lightningnetwork/lnd/). LND is the lightning node implementation of choice so far, while support for additional implementations will be implemented in the future.
 
-Lightning network is a layer operating on top of Bitcoin, hence the c13n stack basis is a bitcoin daemon.
+You can deploy c13n in front of your lightning node and enable data transfer capabilities, without introducing unwanted side-effects to your lightning node. By doing so, you are now able to not only send payments to any node in the network, but also data! Every message/payment sent over c13n is a payment over lightning, and you are able to inspect it with any other tool/dashboard.
 
-The c13n abstraction layer is provided as a RPC API ready to be consumed for your next Lightning app!
+The c13n abstraction layer is provided as a RPC API ready to be consumed for your next-gen Lightning app!
 
-### Sending a message/payment
 
-- Your application will ask c13n to send a message/payment to a specific discussion (involving one or more users).
+### Messages are Payments
 
-- Utilizing node route calculation features, c13n will use the optimal LN route.
+Every message sent with c13n is actually a lightning payment. This means that there is a price for each message, averaging around 2-3 satoshis (merely 0.1 pennies), which is used as a fee to intermediate nodes who forward your payload.
 
-- A composite message will be created, including routing info and a small fee for the the intermediate nodes routing your message/payment.
+A single message cannot be greater than ~1KB in size. This limit is dynamic as it depends on multiple factors, one being the length of the route of the payment carrying the message.
 
-- Intermediate nodes will receive this composite payload, acquire their micro fee, then deliver the message to the final node. During this routing process, intermediate nodes cannot read the content or any metadata related to the message sent to the final destination.
 
-- The final destination retrieves the message.
+### Why over lightning
+
+Because at the price of a few sats you get:
+
+- A unified payment & data medium, leading to simplified architectures for apps and services.
+- Data inherit the security & privacy model of lightning payments.
+- Participants in the network are public keys, facilitating data authentication with their signatures.
+- No need for new configurations on already existing setups, as all c13n does is utilize the lightning node.
 
 
 ## Why c13n
-Developing and releasing Lightning Applications becomes a matter of setting up the c13n stack and utilizing the c13n shipped API.
+Developing and releasing Lightning Applications becomes a matter of setting up c13n and utilizing the c13n shipped API.
 
 Developers can now realize innovative applications, focusing on the bigger picture avoiding spending vast amounts of time on gaining LN expertise.
 
-We want applications to have compatibility on the network layer as well as the application layer. Making chatting applications and services able to normally communicate with each other is a great milestone for this ecosystem.
+We promote compatibility of data on both lightning layer (how data is carried over payments) and application layer (payload specs for applications). Making applications and services able to normally communicate with each other is a great starting point for this ecosystem.
 
 We envision an augmented ecosystem of services & apps over the Lightning Network, with easy bootstrapping, deployment, integration and interoperability.
