@@ -39,12 +39,12 @@ theme = "gokarna"
     description2 = "We are now public & open source. Check our code!"
     footer = "c13n"
     socialIcons = [
-      #{name = "twitter", url = "https://twitter.com/c13n_io"},
+      {name = "twitter", url = "https://twitter.com/c13n_io"},
       {name = "github", url = "https://github.com/c13n-io"},
       {name = "slack", url = "https://join.slack.com/t/c13n/shared_invite/zt-wkk5cu44-Zf4iXr9mxNHzW_ZRBZsDQA"},
     ]
     contactpoints = [
-      #{name = "twitter", title = "Twitter", url = "https://twitter.com/c13n_io"},
+      {name = "twitter", title = "Twitter", url = "https://twitter.com/c13n_io"},
       {name = "github", title = "GitHub", url = "https://github.com/c13n-io"},
       {name = "slack", title = "Slack", url = "https://join.slack.com/t/c13n/shared_invite/zt-wkk5cu44-Zf4iXr9mxNHzW_ZRBZsDQA"},
       {name = "mail", title = "contact@c13n.io", url = "mailto:contact@c13n.io"},
