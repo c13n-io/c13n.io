@@ -12,10 +12,10 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://c13n.io/about/</guid>
-      <description>c13n - Creating a common baseline for Lightning Applications ⚡
+      <description>c13n - Creating a common baseline for Lightning Applications
  What is c13n  Pronounced &amp;ldquo;c-thirteen&amp;rdquo;
- Sitting on top of Bitcoin &amp;amp; Lightning Network layer, c13n is a component that makes your interaction with LN much easier. It acts as an intermediate layer between your application and your LN Node, without introducing any centralization characteristics.
-c13n utilizes the node&amp;rsquo;s interface to achieve a higher-level API, easy for devs to get used to and to start building on top of right away.</description>
+ Sitting on top of Lightning Network layer, c13n is a component that introduces new ways to use Lightning. It acts as an intermediate layer over your LN node, enabling ⚡data transfer over lightning⚡ for applications!
+c13n utilizes the node&amp;rsquo;s interface to achieve a higher-level API, including both payment and data focused features, easy for devs to get used to and to start building on top of right away.</description>
     </item>
     
     <item>
@@ -25,7 +25,7 @@ c13n utilizes the node&amp;rsquo;s interface to achieve a higher-level API, easy
       
       <guid>https://c13n.io/contact/</guid>
       <description>If you want to get c13n updates or discuss about the project, you can reach us at:
-GitHub   Slack   contact@c13n.io   </description>
+Twitter   GitHub   Slack   contact@c13n.io   </description>
     </item>
     
   </channel>
